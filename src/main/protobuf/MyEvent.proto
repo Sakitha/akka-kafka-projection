@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package AkkaStream;
+
+import "google/protobuf/timestamp.proto";
+
+message MyEvent {
+    int32 id = 1;
+    google.protobuf.Timestamp eventTime = 2;
+}
